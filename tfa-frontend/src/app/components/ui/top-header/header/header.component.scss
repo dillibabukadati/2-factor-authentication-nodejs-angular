@@ -1,0 +1,19 @@
+.header {
+  width: calc(100% - 16rem);
+  height: 3.3rem !important;
+  position: absolute;
+  right: 0;
+  -webkit-box-shadow: 10px 0px 28px 1px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 10px 0px 28px 1px rgba(0, 0, 0, 0.26);
+  box-shadow: 10px 0px 28px 1px rgba(0, 0, 0, 0.26);
+  transition: 0.5s;
+  background-color: #FBFBFB;
+}
+
+.profile-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+
+}

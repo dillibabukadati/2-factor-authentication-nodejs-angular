@@ -1,0 +1,13 @@
+<div class="side-menu-bar bg-danger" id="sideMenuBar">
+  <!--  <app-side-bar-menu-devider></app-side-bar-menu-devider>-->
+  <div class="d-flex justify-content-center align-items-center text-white fw-bolder logo-container "><h1
+    class="pb-0 mb-0">LOGO</h1></div>
+  <div class="mx-3">
+    <div *ngFor="let item of sideMenu">
+      <app-side-bar-menu-collapsable [item]="item" *ngIf="item.type=='collapsable'"></app-side-bar-menu-collapsable>
+      <app-side-bar-menu-group [item]="item" *ngIf="item.type=='group'"></app-side-bar-menu-group>
+      <app-side-bar-menu-item [item]="item" *ngIf="item.type=='basic'"></app-side-bar-menu-item>
+      <app-side-bar-menu-devider *ngIf="item.type=='divider'"></app-side-bar-menu-devider>
+    </div>
+  </div>
+</div>

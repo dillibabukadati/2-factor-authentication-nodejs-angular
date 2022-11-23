@@ -1,0 +1,18 @@
+<a href="javascript:void(0)" (click)="this.isExpanded=!this.isExpanded" class="menu-row text-decoration-none">
+  <div class="icon">
+    <mat-icon [svgIcon]="item.icon"></mat-icon>
+  </div>
+  <span class="title">{{item.title}}</span>
+  <div class="expand ">
+    <mat-icon [svgIcon]="isExpanded?'mat_outline:expand_less':'mat_outline:expand_more'"></mat-icon>
+  </div>
+</a>
+<div class="mx-3" [ngClass]="isExpanded?'expanded':'collapsed'" *ngFor="let subItem of item.children">
+  <app-side-bar-menu-collapsable [item]="subItem"
+                                 *ngIf="subItem.type=='collapsable'"></app-side-bar-menu-collapsable>
+  <app-side-bar-menu-group [item]="subItem"
+                           *ngIf="subItem.type=='group'"></app-side-bar-menu-group>
+  <app-side-bar-menu-item [item]="subItem"
+                          *ngIf="subItem.type=='basic'"></app-side-bar-menu-item>
+  <app-side-bar-menu-devider *ngIf="subItem.type=='divider'"></app-side-bar-menu-devider>
+</div>

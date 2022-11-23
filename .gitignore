@@ -1,0 +1,14 @@
+./tfa-backend/node_modules
+./tfa-backend/access.log
+./tfa-backend/error.log
+./tfa-frontend/node_modules
+./tfa-frontend/dist
+./tfa-frontend/tmp
+./tfa-frontend/out-tsc
+./tfa-frontend/.idea
+./tfa-frontend/.vscode/*
+./tfa-frontend/!.vscode/settings.json
+./tfa-frontend/!.vscode/tasks.json
+./tfa-frontend/!.vscode/launch.json
+./tfa-frontend/!.vscode/extensions.json
+./tfa-frontend/.history/*

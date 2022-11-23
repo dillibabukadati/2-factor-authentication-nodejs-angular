@@ -1,0 +1,14 @@
+<div class="header  d-flex align-items-center px-3" id="header">
+  <mat-icon aria-hidden="false" class="text-dark pointer" aria-label="Example home icon" (click)="onMenuClick()">menu
+  </mat-icon>
+  <div class="me-2 ms-auto">
+    <div mat-button [matMenuTriggerFor]="menu">
+      <img src="../../../../../assets/images/1641577620559.jpg" class="profile-icon">
+    </div>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="onEnableTFAClick()" *ngIf="!isTFAEnabled">Enable 2Factor Authentication</button>
+      <button mat-menu-item (click)="onDisableTFAClick()" *ngIf="isTFAEnabled">Disable 2Factor Authentication</button>
+      <button mat-menu-item (click)="onLogout()">Logout</button>
+    </mat-menu>
+  </div>
+</div>

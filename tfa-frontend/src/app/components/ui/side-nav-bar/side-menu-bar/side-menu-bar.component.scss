@@ -1,0 +1,16 @@
+.side-menu-bar {
+  min-height: 100vh !important;
+  z-index: 999;
+  overflow: hidden;
+  width: 16rem;
+  -webkit-box-shadow: 10px 0px 28px 1px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 10px 0px 28px 1px rgba(0, 0, 0, 0.26);
+  box-shadow: 10px 0px 28px 1px rgba(0, 0, 0, 0.26);
+  transition: 0.5s;
+  background: rgba(0, 0, 0, 0) linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25)) repeat scroll 0% 0%;
+
+}
+
+.logo-container {
+  height: 52.8px;
+}
