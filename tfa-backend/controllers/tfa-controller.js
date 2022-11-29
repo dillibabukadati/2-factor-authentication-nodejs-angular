@@ -84,7 +84,9 @@ exports.disableTFA = async (req, res) => {
 
 exports.checkIfTFAEnabled = async (req, res) => {
   try {
-    const user=await User.findOne({email: req.body.email})
+    console.log(req.body.email)
+    const user=await User.findOne({where:{email: req.body.email}})
+    console.log(user)
     return res.send({
       status: 200,
       message: "Request processed successfully.",
